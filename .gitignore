@@ -1,5 +1,4 @@
 node_modules/
-PrismStructure/reports/
 PrismStructure/test-results/
 PrismStructure/playwright-report/
 *.log
