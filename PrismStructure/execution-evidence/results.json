@@ -1,0 +1,805 @@
+{
+  "config": {
+    "argv": [
+      "/opt/homebrew/Cellar/node/23.11.0/bin/node",
+      "/Users/tushargupta/MSIL/Assignmnent Qaa/PrismStructure/node_modules/.bin/playwright",
+      "test",
+      "--reporter=json"
+    ],
+    "configFile": "/Users/tushargupta/MSIL/Assignmnent Qaa/PrismStructure/playwright.config.js",
+    "rootDir": "/Users/tushargupta/MSIL/Assignmnent Qaa/PrismStructure/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/tushargupta/MSIL/Assignmnent Qaa/PrismStructure/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/Users/tushargupta/MSIL/Assignmnent Qaa/PrismStructure/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 90000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.62.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "api/TC-API-01-register.spec.js",
+      "file": "api/TC-API-01-register.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "@smoke TC-API-01: User Registration via API",
+          "file": "api/TC-API-01-register.spec.js",
+          "line": 11,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should register a new user and return 201",
+              "ok": true,
+              "tags": [
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 829,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-07T04:22:37.285Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "9e16cca8fb0e4064626e-1e631c5d3c4fd3a44502",
+              "file": "api/TC-API-01-register.spec.js",
+              "line": 22,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "api/TC-API-02-login.spec.js",
+      "file": "api/TC-API-02-login.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "@smoke TC-API-02: Valid Login via API",
+          "file": "api/TC-API-02-login.spec.js",
+          "line": 15,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should return 200 and access_token on valid login",
+              "ok": true,
+              "tags": [
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 777,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-07T04:22:38.138Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d3f8f290f878074b79d1-973c9d675c054cefcecd",
+              "file": "api/TC-API-02-login.spec.js",
+              "line": 21,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "@regression TC-API-03: Invalid Login via API",
+          "file": "api/TC-API-02-login.spec.js",
+          "line": 34,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should return 401 on invalid credentials",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 612,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-07T04:22:38.921Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d3f8f290f878074b79d1-bfafff9627326678363f",
+              "file": "api/TC-API-02-login.spec.js",
+              "line": 40,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "api/TC-API-04-products.spec.js",
+      "file": "api/TC-API-04-products.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "@smoke TC-API-04: Get Products List",
+          "file": "api/TC-API-04-products.spec.js",
+          "line": 14,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should return 200 and a list of products",
+              "ok": true,
+              "tags": [
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 637,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-07T04:22:39.542Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "bff35bbce5031e89d41c-5e1326d10ec3d67dd82d",
+              "file": "api/TC-API-04-products.spec.js",
+              "line": 20,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "@regression TC-API-05: Get Product by ID",
+          "file": "api/TC-API-04-products.spec.js",
+          "line": 30,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should return 200 with product details for valid id",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1258,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-07T04:22:40.184Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "bff35bbce5031e89d41c-37e2f81fb855c413c4ff",
+              "file": "api/TC-API-04-products.spec.js",
+              "line": 43,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "api/TC-API-06-cart-invoice.spec.js",
+      "file": "api/TC-API-06-cart-invoice.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "@regression TC-API-06: Cart Creation and Invoice Generation",
+          "file": "api/TC-API-06-cart-invoice.spec.js",
+          "line": 11,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should create cart successfully",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1348,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-07T04:22:41.450Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a17f14e518cac52d16ed-ad6054b06070c860ebc0",
+              "file": "api/TC-API-06-cart-invoice.spec.js",
+              "line": 25,
+              "column": 3
+            },
+            {
+              "title": "should add product to cart and verify cart contents",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3211,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-07T04:22:42.804Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a17f14e518cac52d16ed-29efdf839a727d8d1f99",
+              "file": "api/TC-API-06-cart-invoice.spec.js",
+              "line": 32,
+              "column": 3
+            },
+            {
+              "title": "should generate invoice successfully (full end-to-end via API)",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3337,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-07T04:22:46.021Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a17f14e518cac52d16ed-bce614d260b0117f4059",
+              "file": "api/TC-API-06-cart-invoice.spec.js",
+              "line": 56,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "ui/TC-UI-01-registration.spec.js",
+      "file": "ui/TC-UI-01-registration.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "@smoke TC-UI-01: User Registration",
+          "file": "ui/TC-UI-01-registration.spec.js",
+          "line": 9,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should register a new user and redirect to login",
+              "ok": true,
+              "tags": [
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 8983,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-07T04:22:49.371Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "7239067d867ea740b676-48896f7f7dd8743584f2",
+              "file": "ui/TC-UI-01-registration.spec.js",
+              "line": 10,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "ui/TC-UI-02-login.spec.js",
+      "file": "ui/TC-UI-02-login.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "@smoke TC-UI-02: Valid Login",
+          "file": "ui/TC-UI-02-login.spec.js",
+          "line": 9,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should login and show account nav",
+              "ok": true,
+              "tags": [
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 6369,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-07T04:22:58.568Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "810d5712ccb52ca9f90d-e0075f8bd3efe1b48bdf",
+              "file": "ui/TC-UI-02-login.spec.js",
+              "line": 10,
+              "column": 3
+            }
+          ]
+        },
+        {
+          "title": "@regression TC-UI-03: Invalid Login",
+          "file": "ui/TC-UI-02-login.spec.js",
+          "line": 21,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should show error message on wrong credentials",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5559,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-07T04:23:04.943Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "810d5712ccb52ca9f90d-08f3151d63c1ec0b5b11",
+              "file": "ui/TC-UI-02-login.spec.js",
+              "line": 22,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "ui/TC-UI-04-search.spec.js",
+      "file": "ui/TC-UI-04-search.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "@smoke TC-UI-04: Product Search",
+          "file": "ui/TC-UI-04-search.spec.js",
+          "line": 8,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should return products matching search term",
+              "ok": true,
+              "tags": [
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4936,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-07T04:23:10.513Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "a7eaf41a6f673b5f022f-ac9a6a02aac77686fcda",
+              "file": "ui/TC-UI-04-search.spec.js",
+              "line": 9,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "ui/TC-UI-05-add-to-cart.spec.js",
+      "file": "ui/TC-UI-05-add-to-cart.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "@smoke TC-UI-05: Add Product to Cart",
+          "file": "ui/TC-UI-05-add-to-cart.spec.js",
+          "line": 10,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should add product to cart and show cart badge",
+              "ok": true,
+              "tags": [
+                "smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 13926,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-07T04:23:15.466Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "6cc8979d85b3cf6fd56c-4b22932a1c5b736f5b5d",
+              "file": "ui/TC-UI-05-add-to-cart.spec.js",
+              "line": 11,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "ui/TC-UI-06-checkout-e2e.spec.js",
+      "file": "ui/TC-UI-06-checkout-e2e.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "@regression TC-UI-06: End-to-End Checkout + Invoice",
+          "file": "ui/TC-UI-06-checkout-e2e.spec.js",
+          "line": 13,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should complete checkout and confirm order",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 23739,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-07T04:23:29.406Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "7ccc84db0d6ebd7c285e-554ee8cd759e0086304e",
+              "file": "ui/TC-UI-06-checkout-e2e.spec.js",
+              "line": 14,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "ui/TC-UI-07-cart-update.spec.js",
+      "file": "ui/TC-UI-07-cart-update.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "@regression TC-UI-07: Cart Quantity Update",
+          "file": "ui/TC-UI-07-cart-update.spec.js",
+          "line": 11,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should update product quantity in cart",
+              "ok": true,
+              "tags": [
+                "regression"
+              ],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 17278,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-07T04:23:53.155Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "52f4538434c8e0e2e15d-9d6aaab7e2fe01ea08dd",
+              "file": "ui/TC-UI-07-cart-update.spec.js",
+              "line": 12,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-08-07T04:22:36.940Z",
+    "duration": 93558.967,
+    "expected": 15,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
